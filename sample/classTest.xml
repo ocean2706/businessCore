@@ -16,8 +16,20 @@ or any combination of directories ro.test/classTest.xml -->
       <interface type="ro.anothernamespace.MyInterface2" />
     </implements>
     <field name="myStringField" type="String" defaultValue="this is just a string" />
-    <field name="complexField" type="AclassToBeImported" ></field>
-    
+    <field name="complexField" type="AclassToBeImported" ><!-- how can we specify the default value of aclasstobeimported?
+    it can be as mx (old adobe flex markup lang ) -->
+    <AClassToBeImported >
+      <!-- ...... 
+      other fields tags and values can go here
+      -->
+    </AClassToBeImported>
+    </field>
+    <function forname="myFunction" type="function" returnType="" lang="js"  >
+      
+      <[[CDATA 
+        
+      ]>
+    </function>
   </class>
 </namespace>
 </classdef>
