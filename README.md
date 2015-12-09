@@ -18,6 +18,7 @@ class Object1 {
   String typename="an.external.type"
       Function internalConvertorFunction=Object.getInternalConvertorForType("an.external.type.",typeof(Object1));
       if(internalConvertorFunction)==null{
+      //for example
       invertorConvertorFunction=function(typea,instance){
         //do something to convert
         return Object1
@@ -42,4 +43,5 @@ As described elsewhere, there will be java/php like annotation for class decorat
 There are in the wild some informations about how data is to be represented for example microformats.org cover a large part of business objects
 
 ##Client database
-We recomend the use of sqlite for database structure
+We recomend the use of sqlite in order to allow  database struct generation.
+@todo a server emulation using ws server and application engine backend for sqlite in order to allow multiple acces to database in a db server like way
