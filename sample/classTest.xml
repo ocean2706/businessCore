@@ -35,7 +35,10 @@ predirectives as
     or php @comments style
     or @Annotation java style
     or even [ClassOrFunctionDecoration] c# style
-    @todo think about other type of decorators, what can be inside a comment, etc.    
+    @todo think about other type of decorators, what can be inside a comment, etc.  
+    
+    the comment will be translated to internal object comments list referencing internal class representation, containing:
+    text:This comment and ref, a reference object containing bywhat=name and value=myAbstractClass(fullyqualified internal).
     ]>
   </comments>
   <class name="MyAbstractClass" extend="ro.anothernamespace1.BaseClassForMyClass" >
@@ -78,7 +81,8 @@ predirectives as
       ]>
     </script>
     <code name="secondFunction"  type="function" src="this.function.is.defined.elsewhere.js" lang="lang.does.not.to.be.specified.asitcanbedetermined.from.extension" />
-    <code name="thirdFunction" type="function" abstract="true" 
+    <!-- a function  without body, return void, no params abstract parameter is optional -->
+    <code name="thirdFunction" type="function" abstract="true" />
   </class>
 </namespace>
 </classdef>
