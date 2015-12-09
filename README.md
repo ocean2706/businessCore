@@ -10,7 +10,7 @@ Our current proposal is to use xml representation and cover as much as possible 
 Also we will cover a more advanced inheritance and polimorphism - for example an country can be part of an address but also it can be an object for describing statistic. Our new polymorphism and inheritance will allow to use a single set of description and extend this object at runtime by adding additional "convertors" to other type of objects - this will be a facility of the core underline objects that all objects must be derived from.
 
 there will be something like that(@todo):
-
+```javascript
 class Object1 {
   String property1;
   String property2;
@@ -27,6 +27,7 @@ class Object1 {
       }
   }
 }
+```
 
 
 
