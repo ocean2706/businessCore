@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<classdef>
+<!-- the import line - the generator will search for classTest.xml, ro.test.classTest.xml 
+or any combination of directories ro.test/classTest.xml -->
+<import>classTest,ro.test.classTest</import>
+<namespace name="" >
+  <class name="">
+  </class>
+</namespace>
+</classdef>
