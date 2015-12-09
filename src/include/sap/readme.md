@@ -1,6 +1,6 @@
 #SAP Compatible Collection 
 This is a container for SAP related libraries in order to represent common sap objects:
-A. SAP Comons
+A.SAP Comons
 B.Details
   1.Automotive
     1
@@ -12,5 +12,6 @@ B.Details
     1.Commons
     2.CATV
     3.Gas Delivery
-    4.Electricity
+    4.Electricity Distribuitor
+    5.Heat Provider
 
