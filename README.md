@@ -9,12 +9,21 @@ Our current proposal is to use xml representation and cover as much as possible 
 
 Also we will cover a more advanced inheritance and polimorphism - for example an country can be part of an address but also it can be an object for describing statistic. Our new polymorphism and inheritance will allow to use a single set of description and extend this object at runtime by adding additional "convertors" to other type of objects - this will be a facility of the core underline objects that all objects must be derived from.
 
-there will be something like that:
+there will be something like that(@todo):
 
 class Object1 {
   String property1;
   String property2;
   String accesingInternalInheritance(){
+  String typename="an.external.type"
+      Function internalConvertorFunction=Object.getInternalConvertorForType("an.external.type.",typeof(Object1));
+      if(internalConvertorFunction)==null{
+      invertorConvertorFunction=function(typea,instance){
+        //do something to convert
+        return Object1
+      };
+      Object.addInternalConvertorForType("an.external.type",invertorConvertorFunction,typeof(Object1));
+      }
   }
 }
 
