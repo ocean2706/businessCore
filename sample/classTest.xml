@@ -3,8 +3,21 @@
 <!-- the import line - the generator will search for classTest.xml, ro.test.classTest.xml 
 or any combination of directories ro.test/classTest.xml -->
 <import>classTest,ro.test.classTest</import>
-<namespace name="" >
-  <class name="">
+<!-- maybe this is better ?, maybe without imports tag ? -->
+<imports>
+  <import type="ro.test.AClassToBeImported" />
+</imports>
+<!-- or using using ? is better   -->
+<namespace name="ro.testnamespace" >
+  <class name="MyClass" extend="ro.anothernamespace1.BaseClassForMyClass">
+    <implements>
+      <!-- maybe without implements tag ? -->
+      <interface type="ro.anothernamespace.MyInterface1" />
+      <interface type="ro.anothernamespace.MyInterface2" />
+    </implements>
+    <field name="myStringField" type="String" defaultValue="this is just a string" />
+    <field name="complexField" type="AclassToBeImported" ></field>
+    
   </class>
 </namespace>
 </classdef>
