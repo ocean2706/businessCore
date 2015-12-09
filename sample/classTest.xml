@@ -27,6 +27,17 @@ predirectives as
 
 -->
 <namespace name="ro.testnamespace" >
+  <comments ref="{name:"myAbstractClass"}">
+    <[[CDATA
+    Here all the comments for a class or a field or a 
+    You can use 
+    #Markup
+    or php @comments style
+    or @Annotation java style
+    or even [ClassOrFunctionDecoration] c# style
+    @todo think about other type of decorators, what can be inside a comment, etc.    
+    ]>
+  </comments>
   <class name="MyAbstractClass" extend="ro.anothernamespace1.BaseClassForMyClass" >
     <!-- this class is not marked as abstract
     
@@ -44,6 +55,7 @@ predirectives as
     </AClassToBeImported>
     </field>
     <!-- this function will return void as returnType is not specified -->
+    <comments ref="{name:'myFunction'}" >This are comments about myFunction function inside MyClass class</comments>
     <code name="myFunction" type="function" returnType="" lang="js" params="[{name1,type1},{name2,type2}]"  >
       <!-- maybe without paramsdef ? it must be available to be xquery -ied like this  //function(@name="myFunction")/param but also params attribute must be  -->
         <param name="name2" type="ro.typeref.Type" />
