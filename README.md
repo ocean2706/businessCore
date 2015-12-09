@@ -38,7 +38,15 @@ We will define our own convertible "lowLevel" classes for: Object, String,  Numb
 
 
 Scripting:
-At this moment we believe that is better to script using js. This means you will be able to use <link /> tag to reference external js ( most of them will be local, related to the source tree ) and  <script /> tag. Also that means all generators is required to parse js and generate code from js in order to implement some (if any) 
+At this moment we believe that is better to script using js. This means you will be able to use <link /> tag to reference external js ( most of them will be local, related to the source tree ) and  <script /> tag. Also that means all generators is required to parse js and generate code from js in order to implement some (if any) code.
+
+It is the user choice to implement other kind of scripting but the main implementation engine (that we will provide) will fail to understand that code if no plugin provided.
+@Maybe another kind of language, more simple will be created.
+
+
+Rules of generation(@must be completed):
+-everything is public until specified elsewhere. if not public, private or protected must be used.
+
 
 #### Type notation
 We will use java-like standard notation ( reverse domain notation ) for type. This is interesting also for the autodetection system of import 
