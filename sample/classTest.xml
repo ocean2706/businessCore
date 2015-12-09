@@ -4,32 +4,69 @@
 or any combination of directories ro.test/classTest.xml -->
 <import>classTest,ro.test.classTest</import>
 <!-- maybe this is better ?, maybe without imports tag ? -->
-<imports>
-  <import type="ro.test.AClassToBeImported" />
-</imports>
+<import type="ro.test.AClassToBeImported" />
+
 <!-- or using using ? is better   -->
+<using namespace="namespace1" />
+<using namespace="namespace2" />
+<include src="includecode.js" /> <!-- this code  have to be included before class def -->
+<include lang="js" ><[[CDATA
+usingnamespace("namespace2); // usingnamespace is a fictive function
+
+]]>
+</include>
+<!--
+are interesting to add something like ?
+predirectives as 
+#define
+#if
+#endif
+#undefine
+
+#elseif
+
+-->
 <namespace name="ro.testnamespace" >
-  <class name="MyClass" extend="ro.anothernamespace1.BaseClassForMyClass">
-    <implements>
+  <class name="MyAbstractClass" extend="ro.anothernamespace1.BaseClassForMyClass" >
+    <!-- this class is not marked as abstract
+    
       <!-- maybe without implements tag ? -->
       <interface type="ro.anothernamespace.MyInterface1" />
       <interface type="ro.anothernamespace.MyInterface2" />
-    </implements>
+    
     <field name="myStringField" type="String" defaultValue="this is just a string" />
     <field name="complexField" type="AclassToBeImported" ><!-- how can we specify the default value of aclasstobeimported?
     it can be as mx (old adobe flex markup lang ) -->
     <AClassToBeImported >
       <!-- ...... 
-      other fields tags and values can go here
+      other fields tags and values can go here - this is an instance of AClassToBeImported referenced by the field complexField in js
       -->
     </AClassToBeImported>
     </field>
-    <function forname="myFunction" type="function" returnType="" lang="js"  >
-      
-      <[[CDATA 
+    <!-- this function will return void as returnType is not specified -->
+    <code name="myFunction" type="function" returnType="" lang="js" params="[{name1,type1},{name2,type2}]"  >
+      <!-- maybe without paramsdef ? it must be available to be xquery -ied like this  //function(@name="myFunction")/param but also params attribute must be  -->
+        <param name="name2" type="ro.typeref.Type" />
+        <param name="name2" type="ro.typeref.Type" />
+        <!-- another way to represent parameters can be
+        <params ><[[CDATA
+        [{name1,typedef},{name2,typedef}]
+        ]></params>
         
+        any of params attribute, param, or params tag must be added to internal __params__ array.
+        -->
+      <[[CDATA 
+      
+      //parameters must be available inside by __params__ array
+      echo(__params__.length); // echo is a fictive function not defined here.
+      if(complexField is AClassToBeImported){
+        complexField .SomeDataValue="test1234";
+        //do other things here...
+      }
       ]>
-    </function>
+    </script>
+    <code name="secondFunction"  type="function" src="this.function.is.defined.elsewhere.js" lang="lang.does.not.to.be.specified.asitcanbedetermined.from.extension" />
+    <code name="thirdFunction" type="function" abstract="true" 
   </class>
 </namespace>
 </classdef>
