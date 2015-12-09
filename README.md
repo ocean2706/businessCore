@@ -25,7 +25,10 @@ class Object1 {
       };
       Object.addInternalConvertorForType("an.external.type",invertorConvertorFunction,typeof(Object1));
       }
+      
+      return "";
   }
+  //here it can be another discusion about -it is attached by type or it is attached by instance 
 }
 ```
 
