@@ -55,7 +55,7 @@ We will use java-like standard notation ( reverse domain notation ) for type. Th
 As described elsewhere, there will be java/php like annotation for class decoration and ide type intelisense
 for example
 
-```ecmascript
+```javascript
 ///[SomeClassAnotationwith(parameters1="",parameters2="")]
 ///[AnotherAnnotationWithoutParames]
 ///[ItIsTheUserChoiceToFolowAnotherAnotationsorToIgnoreit]
