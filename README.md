@@ -36,12 +36,34 @@ class Object1 {
 
 We will define our own convertible "lowLevel" classes for: Object, String,  Number and DateTime in order to force a correct implementation of generator for example in order to fix processor aritmetics - so there will be big number aritmetics only. it is the choice of generator implementation how to do that.
 
+
+Scripting:
+At this moment we believe that is better to script using js. This means you will be able to use <link /> tag to reference external js ( most of them will be local, related to the source tree ) and  <script /> tag. Also that means all generators is required to parse js and generate code from js in order to implement some (if any) 
+
 #### Type notation
 We will use java-like standard notation ( reverse domain notation ) for type. This is interesting also for the autodetection system of import 
 @todo It must be figured out if the build system will autodetect files and dependencies based on actual import tags or it will have to be explicit writed down in a command file (like a build.xml (java like) or similar (vs studio, eclipse, netbeans )
 
-As described elsewhere, there will be java/php like annotation for class decoration and ide type help
+As described elsewhere, there will be java/php like annotation for class decoration and ide type intelisense
+for example
 
+```ecmascript
+///[SomeClassAnotationwith(parameters1="",parameters2="")]
+///[AnotherAnnotationWithoutParames]
+///[ItIsTheUserChoiceToFolowAnotherAnotationsorToIgnoreit]
+class PublicClass{
+  ///@Description
+  ///Here it go
+  ///@Todo
+  ///More
+  ///[@return ro.type.myType]
+  ///it is not realy required as we use typed notation here
+  ro.type.MyType MyFunction(String param1, String param2){
+   return null; 
+  }
+}
+```
+It is the choice of the builder to specify another script language
 
 ###Core objects
 There are in the wild some informations about how data is to be represented for example microformats.org cover a large part of business objects
