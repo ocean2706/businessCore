@@ -69,7 +69,7 @@ class PublicClass{
   ro.type.MyType MyFunction(String param1, String param2){
    return null; 
   }
-}
+
 ```
 It is the choice of the builder to specify another script language
 
