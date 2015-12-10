@@ -1,5 +1,5 @@
 
-#Industrial Business models
+# Industrial Business models
 ## By Line of Business
 
   1. Asset Management Objects
@@ -16,7 +16,6 @@
   12. Sustainability
 
   
-
 ## By Industry
 
     1. Aerospace and Defense
