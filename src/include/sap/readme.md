@@ -1,12 +1,10 @@
 #SAP Compatible Collection 
 This is a container for SAP related libraries in order to represent common sap objects:
-1. SAP Comons
-  1. Generic Financial Objects (
-  2. Generic Accounting Objects (also see Accounting )
-  3. Generic Insurance Objects (also see insurance )
-  4. 
-2. Details
-  1. Transportation
+1. SAP Generic Objects
+  
+2. Details by 
+```
+1. Transportation
     1. Makers
       1. Auto Makers
       2. Auto Part Makers
@@ -44,4 +42,4 @@ This is a container for SAP related libraries in order to represent common sap o
     3. Gas Delivery
     4. Electricity Distribuitor
     5. Heat Provider
-
+```
