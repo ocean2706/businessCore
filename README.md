@@ -1,5 +1,6 @@
-# businessCore
+# Open businessCore
 This is a collection of  representation of common business data to be used in order to generate core database and other representation of this kind of objects
+
 
 ## Specification
 @todo
@@ -81,3 +82,10 @@ We recomend the use of sqlite in order to allow  database struct generation.
 @todo a server emulation using ws server and application engine backend for sqlite in order to allow multiple acces to database in a db server like way
 ## References and influences
 [https://docs.oracle.com/javase/specs/jls/se8/html/index.html]
+[http://w3c.org] specifications
+[https://www.ietf.org/] via RFC [https://www.ietf.org/rfc.html] - to be used in another project -> openProtocols
+
+## License
+The code here is free for use as is. No license required, but if you use ideeas or code here,
+Please contribute (with code ) for the good of comunity
+
