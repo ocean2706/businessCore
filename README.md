@@ -73,9 +73,11 @@ class PublicClass{
 ```
 It is the choice of the builder to specify another script language
 
-###Core objects
+### Core objects
 There are in the wild some informations about how data is to be represented for example microformats.org cover a large part of business objects
 
-##Client database
+## Client database
 We recomend the use of sqlite in order to allow  database struct generation.
 @todo a server emulation using ws server and application engine backend for sqlite in order to allow multiple acces to database in a db server like way
+## References and influences
+[https://docs.oracle.com/javase/specs/jls/se8/html/index.html]
