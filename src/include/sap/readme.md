@@ -43,3 +43,38 @@ This is a container for SAP related libraries in order to represent common sap o
     4. Electricity Distribuitor
     5. Heat Provider
 ```
+2. SAP Business Components for SAP Solutions 
+ as described here [http://go.sap.com/solution/platform-technology.html]
+ 1. Analytics Technology
+
+    Business Intelligence
+    Enterprise Performance Management
+    Governance, Risk and Compliance
+    Predictive Analytics
+
+2. Enterprise Technology
+
+    Application Lifecycle Management
+    Collaboration Tools
+    Enterprise Information Management
+    IT Infrastructure Management
+    Middleware
+    Security
+
+3. In-Memory Technology
+
+    Applications (powered by SAP HANA)
+    Data Warehousing
+    Data Management
+    In-Memory Platform
+
+4. Mobile Technology
+
+    Enterprise Mobility Management
+    Messaging Services
+    Mobile Application Development Platform
+    Mobile Apps
+
+
+3. SAP 
+
