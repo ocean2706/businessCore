@@ -11,14 +11,17 @@ This domain can be under split in country specific models but we will start with
   6. medical system management - hospital
   7. technical medical apparature drivers and interfaces
   8. document management system 
-  9. imagery
+  9. imagery data
   10. general accounting
-  11. building plan tracing and accounting
-  12. orders management
+  11. building planning - tracing and accounting
+  12. generic orders management
   13. hospital business objects
   14. business process management
   15. data mining and business inteligence related objects and aggregators
   16. insurance and broker house management
+    1. generics
+    2. Romanian Insurers Interfaces for RCA
+    3. Romanian Insurers -PAID
   17. general stockmarket objects 
   18. auto fleet management 
   19. 
