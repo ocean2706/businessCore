@@ -1,6 +1,7 @@
 # Domains
 This section covers non international models, but appliable to international domanins
 This domain can be under split in country specific models but we will start with some generic comon for every country
+This will include/require some other generic includes
 
 ## Domains (@need reordering )
   1. pharma - retail accounting
