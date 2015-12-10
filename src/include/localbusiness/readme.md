@@ -24,4 +24,8 @@ This domain can be under split in country specific models but we will start with
     3. Romanian Insurers -PAID
   17. general stockmarket objects 
   18. auto fleet management 
-  19. 
+  19. hotel management
+  20. tour operator management
+  21. travel agency management
+  22. ticketing document management
+  23. customer relationship management
