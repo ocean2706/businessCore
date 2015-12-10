@@ -86,6 +86,8 @@ We recomend the use of sqlite in order to allow  database struct generation.
 3. [https://www.ietf.org/] via RFC [https://www.ietf.org/rfc.html] - to be used in another project -> openProtocols
 
 ## License
-The code here is free for use as is. No license required, but if you use ideeas or code here,
-Please contribute (with code ) for the good of comunity
+The code here is free for use as is. No license required, but if you use ideeas or code here
+please contribute (with code ) for the good of comunity.
+Also nobody can be blamed if you will use this code in any interests and with any effects.
+
 
