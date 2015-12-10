@@ -20,5 +20,5 @@ This domain can be under split in country specific models but we will start with
   15. data mining and business inteligence related objects and aggregators
   16. insurance and broker house management
   17. general stockmarket objects 
-  18. auto park management 
+  18. auto fleet management 
   19. 
