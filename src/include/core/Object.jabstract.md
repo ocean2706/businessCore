@@ -41,7 +41,7 @@ interface ICoreRegisteredDataConvertor{
 }
 ///store a description about how an object must be converted to another, property mappings and more
 //@todo
-class CoreRegisteredDataConvertor implements ICoreRegisteredDataConvertor{
+class CoreRegisteredDataConvertor : ICoreRegisteredDataConvertor{
     NativeType ConvertTo;
     NativeType ConvertFrom;
     Object Convert(Object InputData);
