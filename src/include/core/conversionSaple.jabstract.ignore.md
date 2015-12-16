@@ -16,7 +16,7 @@ class Person:CoreMultipleInheritanceObject{
   //private destructor ? // public destructor ?
 }
 class PersonUsage {
-///this is a sample of how data is dynamic typed !!!!
+///this is a sample of how data is dynamic converted !!!!
   convert(){
     
     originalPerson=new Person();
