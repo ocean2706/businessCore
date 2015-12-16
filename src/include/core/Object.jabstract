@@ -1,0 +1,21 @@
+/*
+this is a placeholder to represent a class that can be used as a core using a non existent language similar to ecma script /csharp etc
+*/
+
+namespace ro.businesscore.core{
+[Native]
+class Object{
+  getType(){
+  return this.internal.Type;
+  }
+}
+/*
+Multiple Inheritance Object is extending the  base object
+in order to allow performance implementation for simple
+objects that don`t need multiple transfromation as writed in the spec
+*/
+[Native]
+class MultipleInheritanceObject:Object{
+    ConversionList<String,
+}
+}
