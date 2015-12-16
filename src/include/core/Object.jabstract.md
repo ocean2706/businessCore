@@ -3,7 +3,7 @@
 this is a placeholder to represent a class that can be used as a core using a non existent language similar to ecma script /csharp etc
 */
 
-namespace ro.businesscore.core{
+ns ro.businesscore.core{
 /*
 The name of the core class is NativeObject
 in order not to polute possible implementations of for example java that use the term object
@@ -35,9 +35,9 @@ class CoreMultipleInheritanceObject:NativeObject{
 class ConvertorList<TKey, TImpl>:IConvertorList<TKey,TImpl>{
       
 }
-interface IConvertorList<TKey, TImpl>{
+iface IConvertorList<TKey, TImpl>{
 }
-interface ICoreRegisteredDataConvertor{
+iface ICoreRegisteredDataConvertor{
 }
 ///store a description about how an object must be converted to another, property mappings and more
 //@todo
@@ -84,7 +84,7 @@ operators overloading must be described here
 }
 
 ///a collection of classes to be reflect object structure - to be implemented by language generators
-namespace ro.businessCore.core.reflection {
+ns ro.businessCore.core.reflection {
 
 
 }
