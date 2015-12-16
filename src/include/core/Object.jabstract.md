@@ -2,7 +2,7 @@
 /*
 this is a placeholder to represent a class that can be used as a core using a non existent language similar to ecma script /csharp etc
 */
-
+//ns means namespace - can be used both, don`t care.
 ns ro.businesscore.core{
 /*
 The name of the core class is NativeObject
@@ -35,6 +35,7 @@ class CoreMultipleInheritanceObject:NativeObject{
 class ConvertorList<TKey, TImpl>:IConvertorList<TKey,TImpl>{
       
 }
+//iface stand for interface; can be used both, don`t care
 iface IConvertorList<TKey, TImpl>{
 }
 iface ICoreRegisteredDataConvertor{
