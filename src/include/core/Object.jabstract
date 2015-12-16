@@ -44,4 +44,8 @@ class NativeDateTime {
 //this class will be automated derived from NativeObject
 class TimeSpan{
 }
+
+/*
+operators overloading must be described here
+*/
 }
