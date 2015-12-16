@@ -1,4 +1,4 @@
-```
+```javascript
 /*
 this is a placeholder to represent a class that can be used as a core using a non existent language similar to ecma script /csharp etc
 */
