@@ -33,10 +33,13 @@ class CoreMultipleInheritanceObject:NativeObject{
 
 ///List is defined elsewhere
 class ConvertorList<TKey, TImpl>:IConvertorList<TKey,TImpl>{
-      
+      ICoreRegisteredDataConvertor FindConvertor(TKey key){
+        return this[TKey]; //@todo what if the key is not in dict ?
+      }
 }
 //iface stand for interface; can be used both, don`t care
 iface IConvertorList<TKey, TImpl>{
+  ICoreRegisteredDataConvertor FindConvertor(TKey key);
 }
 iface ICoreRegisteredDataConvertor{
 }
