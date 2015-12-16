@@ -24,6 +24,24 @@ class PersonUsage {
     return (PersoanaJuridica)originalPerson.Convertors.FindConvertor("ToPersoanaJuridica")(originalPerson);
     
   }
+  ///this is a sample of how data is dynamic converted !!!!
+  ///this is also correct
+  //@return PersoanaJuridica
+  convert2(){
+    
+    originalPerson=new Person();
+    
+    return originalPerson.Convertors.FindConvertor("ToPersoanaJuridica")(originalPerson);
+    
+  }
+  //and this is also correct
+  convert3(){
+    
+    originalPerson=new Person();
+    
+    return originalPerson.Convertors.FindConvertor("ToPersoanaJuridica")(originalPerson);
+    
+  }
   
 }
 }
