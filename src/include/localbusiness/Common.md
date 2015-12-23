@@ -16,24 +16,36 @@ interface IBusiness{
   
    IDelegateList<String,IDelegate> AttachedActions; // actions that can be performed with this object and can be requested by name
     
-    List<IManagementData> ManagementDataInfo;
-    List<FinancialDataColection> FinancialDataCollection;
+    /*
+    hold a list of different administration data for a business like:
+    employees
+    customers
+    contracts
+    
+    each 
+    */
+    List<IAdministrationData> IAdministrativeData;
+    
   
 }
 
 /*
 this is the interface for management
+
+this is the equivalent of a Administration business object
 */
-interface IManagementData{
-  String ManagementDataId;
+interface IAdministrationData{
+  String AdministrationDataId;
   IMicroformatsInfoCollection IdentityData;
+  String getName();
+  List<IFinancialDataCollection> FinancialData;
   
 }
 
 /*
 represent a public 
 */
-public FinancialDataColection {
+interface IFinancialDataColection {
 
 }
 
