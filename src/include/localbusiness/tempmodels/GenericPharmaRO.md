@@ -32,6 +32,11 @@ class Invoice:IInvoice{
 }
 class Chitanta:IDocPlata{
 }
+class Cec:IDocPlata{
+}
+/*class Cambie:IDocPlata{
+}*/
+
 
 
 
