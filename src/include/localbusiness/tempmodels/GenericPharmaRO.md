@@ -1,0 +1,3 @@
+/*
+this is a simple model for GenericPharma objects based on Romania model
+*/
