@@ -17,5 +17,22 @@ class Bon{
 class ListaMedicamente{
 }
 
+//#############
+//#############
+
+interface IDocPlata{
+}
+interface IDocIntrare{
+}
+interface IInvoice{
+}
+class NIR{
+}
+class Invoice:IInvoice{
+}
+class Chitanta:IDocPlata{
+}
+
+
 
 ```
