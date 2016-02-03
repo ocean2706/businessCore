@@ -81,9 +81,10 @@ There are in the wild some informations about how data is to be represented for 
 We recomend the use of sqlite in order to allow  database struct generation.
 @todo a server emulation using ws server and application engine backend for sqlite in order to allow multiple acces to database in a db server like way
 ## References and influences
-1. [https://docs.oracle.com/javase/specs/jls/se8/html/index.html]
-2. [http://w3c.org] specifications
-3. [https://www.ietf.org/] via RFC [https://www.ietf.org/rfc.html] - to be used in another project -> openProtocols
+1. https://docs.oracle.com/javase/specs/jls/se8/html/index.html
+2. http://w3c.org specifications
+3. https://www.ietf.org/ via RFC [https://www.ietf.org/rfc.html] - to be used in another project -> openProtocols
+4. Semantic web ( multiple sources: microfomats, etc)
 
 ## License
 The code here is free for use as is. No license required, but if you use ideeas or code here
