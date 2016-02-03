@@ -84,7 +84,8 @@ We recomend the use of sqlite in order to allow  database struct generation.
 1. https://docs.oracle.com/javase/specs/jls/se8/html/index.html
 2. http://w3c.org specifications
 3. https://www.ietf.org/ via RFC [https://www.ietf.org/rfc.html] - to be used in another project -> openProtocols
-4. Semantic web ( multiple sources: microfomats, etc)
+4. http://schema.org/docs/full.html
+5. Semantic web ( multiple sources: microfomats, etc)
 
 ## License
 The code here is free for use as is. No license required, but if you use ideeas or code here
